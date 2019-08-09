@@ -1,10 +1,9 @@
 import os
 import sys
 import json
-from collections import namedtuple
 
 class Args:
-    
+
     def __init__(self):
 
         assert len(sys.argv) > 1
@@ -14,7 +13,7 @@ class Args:
             if "--config=" in arg:
                 path = arg.split("=")[1]
                 break
-        
+
         if path is None:
             print("You suck")
 
