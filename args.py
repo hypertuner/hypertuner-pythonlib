@@ -14,9 +14,6 @@ class Args:
                 path = arg.split("=")[1]
                 break
 
-        if path is None:
-            print("You suck")
-
         assert path is not None
 
         with open(path) as json_file:
