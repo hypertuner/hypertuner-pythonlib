@@ -7,7 +7,7 @@ setuptools.setup(
     name="hypertuner",
     version="0.0.1",
     author="Klemen Kotar, Dian Niu",
-    author_email="klemen@cs.washington.edu",
+    author_email="klemen@cs.washington.edu, dian.niu.11@gmail.com",
     description="A library for passing arguments and graphing with HyperTuner",
     long_description=long_description,
     long_description_content_type="text/markdown",
