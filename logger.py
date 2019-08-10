@@ -1,5 +1,6 @@
 import json
 import sys
+import time
 
 class Logger:
 
@@ -12,8 +13,12 @@ class Logger:
             if "--config=" in arg:
                 firstsplit = arg.split("=")[1]
                 index = firstsplit.rfind("/")
-                self.path = firstsplit[:index] + "logs.json" #LOOK AT NAMING
+                self.path = firstsplit[:index] + "/logs.json" #LOOK AT NAMING, LOOK AT SLASH
                 break
 
         assert self.path is not None
-        #print("The path is: " + self.path)
+
+    def log(self, logs, framenum = time.time()):
+        logs["frame"] = framenum
+        with open(self.path, 'w') as outfile:
+            json.dump(logs, outfile)
