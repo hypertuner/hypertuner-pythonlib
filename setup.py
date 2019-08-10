@@ -11,7 +11,7 @@ setuptools.setup(
     description="A library for passing arguments and graphing with HyperTuner",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/hypertuner/hypertuner-pythonlib,
+    url="https://github.com/hypertuner/hypertuner-pythonlib",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
